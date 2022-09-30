@@ -1,0 +1,56 @@
+#accueil_part_2{
+    h2{
+        font-family: 'Roboto', sans-serif;
+        font-size: 24px;
+        font-weight: bold;
+        margin: 5px 30px;
+    }
+
+    .accueil_part_2_cartes{
+        display: flex;
+        flex-direction: row;
+        @media (orientation: portrait) {
+            flex-direction: column;
+            margin: 0 auto;
+        }
+        div{
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            gap: 10%;
+            margin: 30px;
+            background-color: #f6f6f6;
+            height: 80px;
+            width: 85%;
+            border-radius: 25px;
+            box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .2);
+            margin-top: 20px;
+            @media (orientation: portrait) {
+                margin: 10px auto;
+            }
+            .bulle{
+                font-family: 'Roboto', sans-serif;
+                background-color: #9356dc;
+                border-radius: 50%;
+                width: 30px;
+                height: 30px;
+                position: absolute;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                top: 23px;
+                left: -10px;
+            }
+            p:last-child{
+                overflow: hidden;
+                white-space: inherit;
+                text-overflow: ellipsis;
+                margin-left: 40px;
+                line-height: 75px;
+                font-family: 'Roboto', sans-serif;
+                font-size: 18px;
+            }
+        }
+    }
+}
